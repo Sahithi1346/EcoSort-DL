@@ -1,0 +1,52 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.spec
+
+# ── Virtual environments ─────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# ── Jupyter Notebooks ────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Dataset (too large for GitHub) ──────────────────────
+# Original Parquet files
+Dataset/
+
+# Processed images extracted from Parquet (29,849 files)
+processed_dataset/
+
+# ── OS / Editor ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Streamlit runtime ────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Misc ─────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak

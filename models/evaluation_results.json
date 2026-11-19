@@ -1,0 +1,353 @@
+{
+    "best_accuracy_model": "densenet121",
+    "best_f1_model": "densenet121",
+    "classes": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+    ],
+    "models": {
+        "custom_cnn": {
+            "model_name": "custom_cnn",
+            "test_samples": 600,
+            "accuracy": 33.17,
+            "precision_macro": 36.55,
+            "precision_weighted": 36.55,
+            "recall_macro": 33.17,
+            "recall_weighted": 33.17,
+            "f1_macro": 28.05,
+            "f1_weighted": 28.05,
+            "inference_time_ms": 18.52,
+            "confusion_matrix": [
+                [
+                    74,
+                    18,
+                    5,
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    16,
+                    64,
+                    5,
+                    0,
+                    9,
+                    6
+                ],
+                [
+                    12,
+                    42,
+                    28,
+                    1,
+                    12,
+                    5
+                ],
+                [
+                    16,
+                    50,
+                    23,
+                    3,
+                    6,
+                    2
+                ],
+                [
+                    14,
+                    37,
+                    31,
+                    0,
+                    14,
+                    4
+                ],
+                [
+                    40,
+                    16,
+                    14,
+                    1,
+                    13,
+                    16
+                ]
+            ],
+            "classification_report": {
+                "cardboard": {
+                    "precision": 0.43023255813953487,
+                    "recall": 0.74,
+                    "f1-score": 0.5441176470588235,
+                    "support": 100.0
+                },
+                "glass": {
+                    "precision": 0.28193832599118945,
+                    "recall": 0.64,
+                    "f1-score": 0.39143730886850153,
+                    "support": 100.0
+                },
+                "metal": {
+                    "precision": 0.2641509433962264,
+                    "recall": 0.28,
+                    "f1-score": 0.27184466019417475,
+                    "support": 100.0
+                },
+                "paper": {
+                    "precision": 0.5,
+                    "recall": 0.03,
+                    "f1-score": 0.05660377358490566,
+                    "support": 100.0
+                },
+                "plastic": {
+                    "precision": 0.25925925925925924,
+                    "recall": 0.14,
+                    "f1-score": 0.18181818181818182,
+                    "support": 100.0
+                },
+                "trash": {
+                    "precision": 0.45714285714285713,
+                    "recall": 0.16,
+                    "f1-score": 0.23703703703703705,
+                    "support": 100.0
+                },
+                "accuracy": 0.33166666666666667,
+                "macro avg": {
+                    "precision": 0.3654539906548446,
+                    "recall": 0.33166666666666667,
+                    "f1-score": 0.2804764347602707,
+                    "support": 600.0
+                },
+                "weighted avg": {
+                    "precision": 0.3654539906548446,
+                    "recall": 0.33166666666666667,
+                    "f1-score": 0.2804764347602707,
+                    "support": 600.0
+                }
+            }
+        },
+        "resnet18": {
+            "model_name": "resnet18",
+            "test_samples": 600,
+            "accuracy": 71.0,
+            "precision_macro": 74.1,
+            "precision_weighted": 74.1,
+            "recall_macro": 71.0,
+            "recall_weighted": 71.0,
+            "f1_macro": 71.63,
+            "f1_weighted": 71.63,
+            "inference_time_ms": 17.95,
+            "confusion_matrix": [
+                [
+                    84,
+                    0,
+                    0,
+                    13,
+                    1,
+                    2
+                ],
+                [
+                    1,
+                    73,
+                    6,
+                    0,
+                    17,
+                    3
+                ],
+                [
+                    2,
+                    6,
+                    70,
+                    5,
+                    13,
+                    4
+                ],
+                [
+                    7,
+                    1,
+                    5,
+                    53,
+                    29,
+                    5
+                ],
+                [
+                    2,
+                    5,
+                    5,
+                    8,
+                    78,
+                    2
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    4,
+                    25,
+                    68
+                ]
+            ],
+            "classification_report": {
+                "cardboard": {
+                    "precision": 0.865979381443299,
+                    "recall": 0.84,
+                    "f1-score": 0.8527918781725888,
+                    "support": 100.0
+                },
+                "glass": {
+                    "precision": 0.8488372093023255,
+                    "recall": 0.73,
+                    "f1-score": 0.7849462365591398,
+                    "support": 100.0
+                },
+                "metal": {
+                    "precision": 0.8045977011494253,
+                    "recall": 0.7,
+                    "f1-score": 0.7486631016042781,
+                    "support": 100.0
+                },
+                "paper": {
+                    "precision": 0.6385542168674698,
+                    "recall": 0.53,
+                    "f1-score": 0.5792349726775956,
+                    "support": 100.0
+                },
+                "plastic": {
+                    "precision": 0.4785276073619632,
+                    "recall": 0.78,
+                    "f1-score": 0.5931558935361216,
+                    "support": 100.0
+                },
+                "trash": {
+                    "precision": 0.8095238095238095,
+                    "recall": 0.68,
+                    "f1-score": 0.7391304347826086,
+                    "support": 100.0
+                },
+                "accuracy": 0.71,
+                "macro avg": {
+                    "precision": 0.741003320941382,
+                    "recall": 0.71,
+                    "f1-score": 0.7163204195553887,
+                    "support": 600.0
+                },
+                "weighted avg": {
+                    "precision": 0.7410033209413821,
+                    "recall": 0.71,
+                    "f1-score": 0.7163204195553887,
+                    "support": 600.0
+                }
+            }
+        },
+        "densenet121": {
+            "model_name": "densenet121",
+            "test_samples": 600,
+            "accuracy": 72.67,
+            "precision_macro": 74.43,
+            "precision_weighted": 74.43,
+            "recall_macro": 72.67,
+            "recall_weighted": 72.67,
+            "f1_macro": 72.97,
+            "f1_weighted": 72.97,
+            "inference_time_ms": 47.62,
+            "confusion_matrix": [
+                [
+                    89,
+                    0,
+                    0,
+                    7,
+                    3,
+                    1
+                ],
+                [
+                    1,
+                    76,
+                    7,
+                    1,
+                    11,
+                    4
+                ],
+                [
+                    1,
+                    3,
+                    70,
+                    4,
+                    18,
+                    4
+                ],
+                [
+                    14,
+                    0,
+                    6,
+                    56,
+                    21,
+                    3
+                ],
+                [
+                    3,
+                    9,
+                    6,
+                    5,
+                    70,
+                    7
+                ],
+                [
+                    2,
+                    1,
+                    1,
+                    4,
+                    17,
+                    75
+                ]
+            ],
+            "classification_report": {
+                "cardboard": {
+                    "precision": 0.8090909090909091,
+                    "recall": 0.89,
+                    "f1-score": 0.8476190476190476,
+                    "support": 100.0
+                },
+                "glass": {
+                    "precision": 0.8539325842696629,
+                    "recall": 0.76,
+                    "f1-score": 0.8042328042328042,
+                    "support": 100.0
+                },
+                "metal": {
+                    "precision": 0.7777777777777778,
+                    "recall": 0.7,
+                    "f1-score": 0.7368421052631579,
+                    "support": 100.0
+                },
+                "paper": {
+                    "precision": 0.7272727272727273,
+                    "recall": 0.56,
+                    "f1-score": 0.632768361581921,
+                    "support": 100.0
+                },
+                "plastic": {
+                    "precision": 0.5,
+                    "recall": 0.7,
+                    "f1-score": 0.5833333333333334,
+                    "support": 100.0
+                },
+                "trash": {
+                    "precision": 0.7978723404255319,
+                    "recall": 0.75,
+                    "f1-score": 0.7731958762886598,
+                    "support": 100.0
+                },
+                "accuracy": 0.7266666666666667,
+                "macro avg": {
+                    "precision": 0.7443243898061015,
+                    "recall": 0.7266666666666666,
+                    "f1-score": 0.7296652547198207,
+                    "support": 600.0
+                },
+                "weighted avg": {
+                    "precision": 0.7443243898061015,
+                    "recall": 0.7266666666666667,
+                    "f1-score": 0.7296652547198206,
+                    "support": 600.0
+                }
+            }
+        }
+    }
+}
